@@ -487,6 +487,12 @@ nav .logo-link {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .register-container {
+    width: 80vw;
+  }
+}
+
 .register-field {
   padding: 0.5vw;
   border-radius: 0.3rem;
