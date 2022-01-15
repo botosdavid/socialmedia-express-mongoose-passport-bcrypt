@@ -1,0 +1,13 @@
+<div class="edit-page-body">
+    <div class="edit-page-container search-box">
+        <div>
+            <h1>Edit Name</h1>
+            <%- include('../../partials/error.ejs') %> 
+            <form action="/profile/editname?_method=PUT" method="POST">
+                    <input type="text" name="name" value="<%= user.name %>">
+                    <button type="submit">Update Name</button>
+            </form>
+        </div>
+    </div>
+</div>
+

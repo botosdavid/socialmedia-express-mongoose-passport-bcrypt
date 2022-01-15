@@ -1,0 +1,23 @@
+<div class="search-box">
+    <h1>Find Users</h1>
+    <form action="/search" method="GET">
+        <input type="text" name="searchinput" value="<%= searchOptions %>">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<div class="people-search-container">
+    <% users.forEach( user => { %> 
+        <a href="/search/<%= user.id %>">
+            <div class="person-search-container">
+            
+                <img width="100" src="<%= user.profileImg %>" alt="">
+                <h2><%= user.name %></h2>
+        
+            </div>
+        </a>
+    <% }) %> 
+</div>
+
+
+<script type="text/javascript" src="/javascript/scroll/searchScroll.js"></script>

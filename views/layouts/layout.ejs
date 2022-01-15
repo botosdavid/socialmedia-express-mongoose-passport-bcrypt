@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="/styles/main/main.css">
+</head>
+<body>
+    <%- include('../partials/header.ejs') %> 
+    <%- body %> 
+</body>
+</html>
+
+<style>
+    .likes,
+    .comments{
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 2;
+        background-color: lightgray;
+        width: 7%;
+        height: auto;
+        border-radius: 7%;
+        opacity: 0.9;
+    }
+
+    .like-drop-down,
+    .comment-drop-down{
+        position: relative;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .like-drop-down{
+        margin-left: 0px;
+    }
+    
+    .like-btn:hover + .likes{display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+    .comment-btn:hover + .comments{display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+</style>

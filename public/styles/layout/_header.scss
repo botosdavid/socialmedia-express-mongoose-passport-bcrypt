@@ -1,0 +1,75 @@
+nav{
+    background-color: $main-dark-blue;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100vw;
+    ul{
+        width: 30vw;
+        height: 10vh;
+        list-style: none;
+        background-color: $main-dark-blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            transition: all 0.3s ease-in-out;
+            border-radius: $border-radius;        
+    
+            a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $main-grey;
+                padding: 1vw;
+                text-decoration: none;
+                letter-spacing: 2px;
+
+                h5{
+                    padding-left: 3px;
+                    @media screen and (max-width: $phone){
+                        display: none;
+                    } 
+                }
+
+                @media screen and (max-width: $phone){
+                    padding: 5vw;
+                }
+
+            }
+    
+            &:hover{
+                background-color: $main-blue;
+            }        
+            
+        }
+
+        @media screen and (max-width: $tablet){
+            width: 55vw;
+        }
+        @media screen and (max-width: $phone){
+            width: 50vw;
+        }
+
+    }
+
+    .logo-text{
+        color: $main-grey;
+        letter-spacing: 3px;
+        font-size:x-large;
+
+        @media screen and (max-width: $phone){
+            font-size:medium;
+        }
+    }
+
+    .logo-link{
+        text-decoration: none;
+    }
+
+}

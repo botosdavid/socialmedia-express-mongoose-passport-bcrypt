@@ -1,0 +1,1 @@
+Node application using express framework, mongodb as database, passport for authentication and bcrypt for encrypting passwords, for safe data storing.

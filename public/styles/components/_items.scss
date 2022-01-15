@@ -1,0 +1,64 @@
+.index-image{
+    width: 47vw;
+}
+
+.index-h1{
+    font-size: 3vw;
+    color: $main-blue;
+    padding: 1vw;
+    text-shadow: $text-shadow;
+}
+
+.index-h3{
+    font-size: 1.2vw;
+}
+
+.register-input{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+.fa-user-alt,
+.fa-envelope,
+.fa-lock,
+.fa-file-alt{
+    color: $main-dark-blue;
+}
+
+.register-h1{
+    text-shadow: $text-shadow;
+}
+
+.error-text{
+    font-size: 1vw;
+}
+
+#profile-image{
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    border: 3px solid $main-dark-blue;
+}
+
+.post-image{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px solid $main-dark-blue;
+}
+
+.comment-image{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    border: 2px solid $main-dark-blue;
+}
+
+.comment-input{
+    height: 4vh;
+    width: 20vw;
+    border-radius: $border-radius;
+    border: 1px solid $main-blue;
+}

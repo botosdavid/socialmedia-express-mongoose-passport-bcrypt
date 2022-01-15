@@ -1,0 +1,59 @@
+<div class="profile-body">
+    <div class="profile-info">
+        <img id="profile-image" width="300" src="<%= profileUser.profileImg %>" alt="">
+        
+        <div>
+            <div>
+                <div class="person-info-container">
+                    <i class="fas fa-user-alt"></i>
+                    <div class="person-info">
+                        <h4>Name</h4>
+                        <h4><%= profileUser.name %></h4>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="person-info-container">
+                    <i class="fas fa-envelope"></i>
+                    <div class="person-info">
+                        <h4>Email</h4>
+                        <h4><%= profileUser.email %></h4>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="person-info-container">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="person-info">
+                        <h4>Description</h4>
+                        <h4><%= profileUser.description %></h4>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="person-info-container">
+                    <i class="fas fa-lock"></i>
+                    <div class="person-info">
+                        <h4>Registered</h4>
+                        <h4><%= profileUser.registerDate.toDateString() %></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="margin-left">
+        <%- include('../../partials/postlist.ejs') %> 
+    </div>
+
+</div>
+
+<!-- <h1><%= profileUser.name %></h1>
+<h2><%= profileUser.email %></h2>
+<h3><%= profileUser.description %></h3>
+<h2><%= profileUser.registerDate.toDateString() %> </h2> -->
+
+
+<script type="text/javascript" src="/javascript/scroll/searchShowScroll.js"></script>

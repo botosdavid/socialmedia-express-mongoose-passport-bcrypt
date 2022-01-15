@@ -1,0 +1,12 @@
+<div class="edit-page-body">
+    <div class="edit-page-container search-box">
+        <div>
+            <h1>Edit Description</h1>
+            <%- include('../../partials/error.ejs') %> 
+            <form action="/profile/editdescription?_method=PUT" method="POST">
+                <textarea name="description" id="description" cols="30" rows="3"></textarea>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="register-body">  
+    <form action="/login" method="POST" class="login-form register-container">
+        <h1 class="register-h1">Login</h1>
+        <%- include('../partials/error.ejs') %> 
+        <div class="register-fields">
+            <div class="register-field">
+                <i class="fas fa-envelope"></i>
+                <input class="register-input" placeholder="Email" type="text" name="email">
+            </div>
+            <div class="register-field">
+                <i class="fas fa-lock"></i>
+                <input class="register-input" placeholder="Password" type="password" name="password">
+            </div>
+        </div>
+        <button class="post-button" type="submit">Login</button>
+    </form>
+</div>

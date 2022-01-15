@@ -1,0 +1,74 @@
+.post-button{
+    background-color: $main-blue;
+    color: $white-text;
+    border-radius: $border-radius;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    cursor: pointer;
+    border: 1px solid $main-blue;
+
+    &:hover{
+        background-color: $white-text;
+        color: $main-blue;
+    }
+}
+
+.comment-button{
+    background-color: $white-text;
+    color: $main-blue;
+    border-radius: $border-radius;
+    border: 1px solid $main-blue;
+    padding: 0.4rem 0.8rem;
+    font-size:large;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: $main-blue;
+        color: $white-text;
+    }
+}
+
+.delete-button{
+    border: none;
+    color: $main-blue;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+.like-button{
+    border: none;
+    color: $main-blue;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.like-list-button,
+.comment-list-button{
+    border: none;
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.logout-button{
+    background-color: $main-grey;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    border-radius: $border-radius;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.edit-button{
+    color: $main-blue;
+    background-color: $main-grey;
+    text-decoration: none;
+    padding: 0.2rem 0.4rem;
+    font-size:small;
+    border-radius: $border-radius;
+}

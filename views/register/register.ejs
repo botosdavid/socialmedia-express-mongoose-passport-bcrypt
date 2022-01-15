@@ -1,0 +1,24 @@
+
+<div class="register-body">
+    <!-- <h1>Register</h1>
+        <%- include('../partials/error.ejs') %>  -->
+    <form class="register-container" action="/register" method="POST">
+        <h1 class="register-h1">Register</h1>
+        <%- include('../partials/error.ejs') %>
+        <div class="register-fields">
+            <div class="register-field">
+                <i class="fas fa-user-alt"></i>
+                <input placeholder="Name" class="register-input" type="text" name="name">
+            </div>
+            <div class="register-field">
+                <i class="fas fa-envelope"></i>
+                <input placeholder='Email' class="register-input" type="text" name="email">
+            </div>
+            <div class="register-field">
+                <i class="fas fa-lock"></i>
+                <input placeholder="Password" class="register-input" type="password" name="password">
+            </div>
+        </div>
+        <button class="post-button" type="submit">Create Account</button>
+    </form>
+</div>

@@ -1,0 +1,67 @@
+<div class="profile-body">
+    <div class="profile-info">
+        <img id="profile-image" width="200" src="<%= user.profileImg %>" alt="">
+        <a class="edit-button" href="/profile/editimage"><i class="fas fa-pen"></i>Edit Profile Picture</a>
+        
+        <div>
+            <div>
+                <div class="person-info-container">
+                    <i class="fas fa-user-alt"></i>
+                    <div class="person-info">
+                        <h4>Name</h4>
+                        <h4><%= user.name %></h4>
+                    </div>
+                </div>
+                <a class="edit-button" href="/profile/editname"><i class="fas fa-pen"></i>Edit Name</a>
+            </div>
+            <div>
+            <br><hr>
+
+                <div class="person-info-container">
+                    <i class="fas fa-envelope"></i>
+                    <div class="person-info">
+                        <h4>Email</h4>
+                        <h4><%= user.email %></h4>
+                    </div>
+                </div>
+                <a class="edit-button" href="/profile/editemail"><i class="fas fa-pen"></i>Edit Email</a>
+            </div>
+            
+            <div>
+            <br><hr>
+
+                <div class="person-info-container">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="person-info">
+                        <h4>Description</h4>
+                        <h4><%= user.description %></h4>
+                    </div>
+                </div>
+                <a class="edit-button" href="/profile/editdescription"><i class="fas fa-pen"></i>Edit Description</a>
+            </div>
+            
+            <div>
+            <br><hr>
+
+                <div class="person-info-container">
+                    <i class="fas fa-lock"></i>
+                    <div class="person-info">
+                        <h4>Registered</h4>
+                        <h4><%= user.registerDate.toDateString() %></h4>
+                    </div>
+                </div>
+                <a class="edit-button" href="/profile/editpassword"><i class="fas fa-pen"></i>Edit Password</a>
+            </div>
+            
+            <form action="/profile/logout?_method=DELETE" method="POST">
+                <button class="logout-button" type="submit"><i class="fas fa-sign-out-alt"></i><span> <span>Log Out</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="margin-left">
+        <%- include('../../partials/postlist.ejs') %>
+    </div>
+
+</div>
+<script type="text/javascript" src="/javascript/scroll/profileScroll.js"></script>
