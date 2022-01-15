@@ -5,7 +5,7 @@ if(process.env.NODE_ENV !== 'production' ){
 //import node modules
 const express = require('express');
 const app = express();
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');
