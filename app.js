@@ -14,7 +14,8 @@ const methodOverride = require('method-override');
 //passport modules
 const passport = require('passport');
 const flash = require('express-flash');
-const session = require('express-session');
+// const session = require('express-session');
+const session = require('cookie-session');
 
 //passport auth modules
 const {isLoggedIn, isLoggedOut} = require('./javascript/auth.js');
