@@ -1,7 +1,7 @@
 <div class="profile-body">
     <div class="profile-info">
         <img id="profile-image" width="200" src="<%= user.profileImg %>" alt="">
-        <a class="edit-button" href="/profile/editimage"><i class="fas fa-pen"></i>Edit Profile Picture</a>
+        <a class="edit-button" href="/profile/editimage"><i class="fas fa-pen"></i> Edit Profile Picture</a>
         
         <div>
             <div>
@@ -12,7 +12,7 @@
                         <h4><%= user.name %></h4>
                     </div>
                 </div>
-                <a class="edit-button" href="/profile/editname"><i class="fas fa-pen"></i>Edit Name</a>
+                <a class="edit-button" href="/profile/editname"><i class="fas fa-pen"></i> Edit Name</a>
             </div>
             <div>
             <br><hr>
@@ -24,7 +24,7 @@
                         <h4><%= user.email %></h4>
                     </div>
                 </div>
-                <a class="edit-button" href="/profile/editemail"><i class="fas fa-pen"></i>Edit Email</a>
+                <a class="edit-button" href="/profile/editemail"><i class="fas fa-pen"></i> Edit Email</a>
             </div>
             
             <div>
@@ -37,7 +37,7 @@
                         <h4><%= user.description %></h4>
                     </div>
                 </div>
-                <a class="edit-button" href="/profile/editdescription"><i class="fas fa-pen"></i>Edit Description</a>
+                <a class="edit-button" href="/profile/editdescription"><i class="fas fa-pen"></i> Edit Description</a>
             </div>
             
             <div>
@@ -50,11 +50,11 @@
                         <h4><%= user.registerDate.toDateString() %></h4>
                     </div>
                 </div>
-                <a class="edit-button" href="/profile/editpassword"><i class="fas fa-pen"></i>Edit Password</a>
+                <a class="edit-button" href="/profile/editpassword"><i class="fas fa-pen"></i> Edit Password</a>
             </div>
             
             <form action="/profile/logout?_method=DELETE" method="POST">
-                <button class="logout-button" type="submit"><i class="fas fa-sign-out-alt"></i><span> <span>Log Out</button>
+                <button class="logout-button" type="submit"><i class="fas fa-sign-out-alt fa-lg"></i><span> <span>Log Out</button>
             </form>
         </div>
     </div>

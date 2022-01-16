@@ -7,16 +7,16 @@
                     <img class="post-image" width="100" src="<%= post.user.profileImg %>" alt="">
                     <div class="post-user-container">
                         <h3><%= post.user.name %> </h3>
-                        <h5><%= post.date.toLocaleString() %></h5>
+                        <h5 class="date"><%= post.date.toLocaleString() %></h5>
                     </div>
                     <% if(post.user.id == user._id){ %>
                         <%- include('./deletePost.ejs', {post: post}) %> 
                     <% } %>
                 </div>
                 <div class="post-text-container">
-                    <h2><%= post.text %></h2>
+                    <h3><%= post.text %></h3>
                 </div>
-    
+                <hr>
                 <div class="post-stats-container">
                     <form  action="/feed/<%= post.id %>/like?_method=PUT" method="POST" onSubmit="{ e => e.preventDefault() }" >
                         
@@ -48,7 +48,6 @@
                         </div>
                     </div>
                 </div>
-    
                 
             </div>
             <div class="comment-section">
@@ -65,7 +64,7 @@
                     </div>
                 <% }) %> 
                 
-                <form action="/feed/<%= post.id %>?_method=PUT" method="POST">
+                <form action="/feed/<%= post.id %>?_method=PUT" method="POST" class="comment-form">
                     <input type="text" name="message" class="comment-input">
                     <button class="comment-button" type="submit">Comment</button>
                 </form>

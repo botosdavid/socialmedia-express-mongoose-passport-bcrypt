@@ -19,7 +19,9 @@
     color: $main-blue;
     border-radius: $border-radius;
     border: 1px solid $main-blue;
-    padding: 0.4rem 0.8rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    height: 4vh;
     font-size:large;
     cursor: pointer;
     
@@ -34,6 +36,8 @@
     color: $main-blue;
     padding: 0.3rem 0.5rem;
     cursor: pointer;
+    background-color: $main-grey;
+    border-radius: $border-radius;
 }
 
 .like-button{
@@ -48,9 +52,8 @@
 .like-list-button,
 .comment-list-button{
     border: none;
-    padding: 0.5rem 0.5rem;
+    padding: 0.3rem 0.6rem;
     background-color: transparent;
-    font-weight: bold;
 }
 
 .logout-button{
@@ -60,7 +63,7 @@
     padding: 0.3rem 0.5rem;
     font-weight: bold;
     border-radius: $border-radius;
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-bottom: 2vh;
 }
 

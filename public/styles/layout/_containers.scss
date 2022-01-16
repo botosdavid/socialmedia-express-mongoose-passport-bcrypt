@@ -87,6 +87,7 @@
 
 .post-header{
     display: flex;
+    gap: 0.7rem;
 }
 
 .post-user-container{
@@ -114,6 +115,15 @@
 
 .comment-header{
     display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    gap: 0.7rem;
+}
+
+.comment-form{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .comment-section{
@@ -218,6 +228,9 @@
             width: 20vw;
             border-radius: $border-radius;
             border: 1px solid $main-blue;
+            @media (max-width: 768px){
+                width: 40vw;
+            }
         }
         button{
             background-color: $white-text;

@@ -5,6 +5,10 @@
     }
 }
 
+.date{
+    color: $second-text;
+}
+
 .index-h1{
     font-size: 3vw;
     color: $main-blue;
@@ -47,6 +51,11 @@
     width: 12vw;
     height: 12vw;
     border: 3px solid $main-dark-blue;
+    @media (max-width: 768px){
+        width: 18vw;
+        height: 18vw;
+        margin: 1rem;
+    }
 }
 
 .post-image{
@@ -54,6 +63,10 @@
     height: 5vw;
     border-radius: 50%;
     border: 2px solid $main-dark-blue;
+    @media (max-width: 768px){
+        width: 8vw;
+        height: 8vw;
+    }
 }
 
 .comment-image{
@@ -61,6 +74,10 @@
     height: 2.5vw;
     border-radius: 50%;
     border: 2px solid $main-dark-blue;
+    @media (max-width: 768px){
+        width: 7vw;
+        height: 7vw;
+    }
 }
 
 .comment-input{
@@ -68,4 +85,7 @@
     width: 20vw;
     border-radius: $border-radius;
     border: 1px solid $main-blue;
+    @media (max-width: 768px){
+        width: 40vw;
+    }
 }
