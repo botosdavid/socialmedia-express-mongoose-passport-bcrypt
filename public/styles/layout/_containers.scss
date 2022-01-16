@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .person-info-container{
@@ -63,6 +64,10 @@
     }
     img{
         scale: 1.2;
+    }
+    .container-flex{
+        flex-direction: column;
+        height: 60vh;
     }
 }
 
@@ -132,7 +137,6 @@
 .container-flex-column{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     justify-content: space-between;
     align-items: flex-start;
     height: 100%;
@@ -143,6 +147,9 @@
     margin: auto;
     height: 90vh;
     padding-top: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .register-body{

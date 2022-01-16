@@ -1,5 +1,8 @@
 .index-image{
     width: 47vw;
+    @media (max-width: 768px){
+        width: 85vw;
+    }
 }
 
 .index-h1{
@@ -7,6 +10,10 @@
     color: $main-blue;
     padding: 1vw;
     text-shadow: $text-shadow;
+    @media (max-width: 768px){
+        font-size: 10vw;
+        text-align: center;
+    }
 }
 
 .index-h3{
